@@ -1,6 +1,3 @@
-# scMetabolism
-`scMetabolism` is a R package for quantifying metabolism activity at the single-cell resolution
-![Screenshot](https://github.com/wu-yc/scMetabolism/raw/main/logo.jpg)
 
 ## Requirements
     install.packages(c("devtools", "data.table", "wesanderson", "Seurat", "devtools", "AUCell", "GSEABase", "GSVA", "ggplot2","rsvd"))
@@ -8,12 +5,12 @@
     
 
 ## Install
-    devtools::install_github("wu-yc/scMetabolism")
+    devtools::install_github("mosmoon/scMetabolism-mouse")
 
 ## Quick Start
-`scMetabolism` generally supports the quantification and visualization of metabolism at the single-cell resolution. 
+`scMetabolism-mouse` generally supports the quantification and visualization of metabolism at the single-cell resolution. 
 
-`scMetabolism` currently supports human scRNA-seq data.
+`scMetabolism-mouse` currently supports human scRNA-seq data.
 
 
 ### 1. Load packages and demo data
@@ -22,7 +19,7 @@ The demo data is the dataset of Peripheral Blood Mononuclear Cells (PBMC) from 1
 
     load(file = "pbmc_demo.rda")
     
-    library(scMetabolism)
+    library(scMetabolism-mouse)
     library(ggplot2)
     library(rsvd)
 
@@ -126,18 +123,6 @@ scMetabolism also supports quantifying metabolism independent of Seurat.
 http://cancerdiversity.asia/scMetabolism/
 
 
-## Contact
-
-Qiang Gao, MD, PhD
-
-Department of Liver Surgery and Transplantation, Liver Cancer Institute, Zhongshan Hospital, Fudan University, Shanghai, China
-
-gaoqiang@fudan.edu.cn
-
-
-Any technical question please contact Yingcheng Wu (yingchengwu21@m.fudan.edu.cn).
-
-Copyright (C) 2020-2023 Gao Lab @ Fudan University.
 
 
 
